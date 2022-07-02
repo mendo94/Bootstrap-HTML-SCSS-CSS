@@ -1,0 +1,49 @@
+<body>
+    
+<main class="container">
+    
+    <div class="container-item">
+        
+        
+        <h1>Survey for Dogsite</h1>
+        
+        <p>We would ruff your feedback!</p>
+        
+        <form action="/url-where-you-want-to-submit-form-data" id="survey-form">
+            
+            <label for="name">Name</label>
+            <input name="name" type="text" placeholder="Enter Your Name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter your email" required>
+            
+            <p>1.) How many times have you visited us before?</p>
+            <label for="number">Number</label>
+            <input type="number" placeholder="Number of visits" min=1 max=5 required>
+            
+            <p>2.) What time of the day do you browse our site?</p>
+            
+            <select name="Time of Day" id="dropdown">
+                <option value="morning">Morning</option>
+                <option value="brunch">Brunch</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option></select>
+                
+                <p>3.) Which activity interests you?</p>
+                
+                <input type="checkbox" value="beach" name="beach">Beach
+                <input type="checkbox" value="dog-park" name="dog-park">Dog Park
+                <input type="checkbox" value="dog-bed" name="dog-bed">Dog Bed 
+                
+                <p>6.) How can you improve my survey?</p>
+                
+                <textarea placeholder="Comments"></textarea><br>
+                
+                <button type="submit" id="submit">
+                    Submit  
+            </form>
+        </div>
+    </main>
+        
+        
+</body>

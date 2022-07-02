@@ -1,0 +1,103 @@
+body {
+    background-image: url("https://thumbs.dreamstime.com/b/pop-art-set-fashion-patch-badges-stickers-pins-patches-quirky-handwritten-notes-collection-s-s-style-trend-vector-79722959.jpg");
+    background-color: #cccccc;
+    background-attachment: fixed;
+   }
+
+header {
+    height: 125px;
+    border: 5px solid black;
+    background-color: rgb(223, 151, 16);
+    ;
+    /* color: white;  */
+}
+
+nav *{
+    float: left;
+    /* width: 10%; */
+    /* color: white; */
+    display: block;
+}
+
+.logo {
+    height: 120px;
+    width: auto;
+    border-radius: 100%;
+
+}
+.nav-links {
+    margin-top: 96px;
+    width: 1039px;
+    font-family: 'Oldenburg', Courier, monospace;
+}
+
+.hobbies {
+    font-family: 'Shadows Into Light', Courier, monospace;
+}
+.nav-link {
+    color: white;
+    width: 100px;
+}
+
+input {
+    width: 300px;
+}
+
+button {
+    width: 100px;
+    color: black;
+}
+
+main {
+    margin-left: 50px;
+    width: 25%;
+    float: left;
+}
+
+.clearfix {
+    clear: both;
+  }
+
+section p + img {
+    height: 300px;
+    width: auto;
+    border: 5px dotted black;
+}
+
+
+section > img {
+    height: 200px;
+    width: auto;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+section {
+    background-color: rgb(223, 151, 16);
+}
+
+#sub-section {
+    margin-right: 50px;
+    width: 50%;
+    float: right;
+    margin-top: 24px;
+}
+
+h2 {
+    font-family: 'Bradley Hand'
+}
+.photo-album {
+    /* height: 104px; */
+    width: auto;
+    /* border: 5px solid black;
+    margin: 0px; */
+}
+
+.blog {
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
