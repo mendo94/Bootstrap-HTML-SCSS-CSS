@@ -1,0 +1,90 @@
+.carousel {
+  width: 80%;
+  height: 80%;
+  align-content: center;
+  margin: auto;
+  font-size: 5vh;
+  border: 5px;
+}
+
+body {
+  background-color: black !important;
+}
+
+.navbar-brand {
+  font-family: georgia;
+  font-size: 10vh;
+  color: #ea9800;
+}
+.nav-link {
+  color: white;
+  font-family: georgia;
+  font-size: 64;
+  color: #ea9800;
+}
+
+.nav-item {
+  background-color: black;
+  color: white;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+p {
+  font-family: georgia;
+  background-color: rgba(221, 130, 2, 0.5);
+}
+
+.mobile-specials {
+  display: none;
+}
+
+/* CONTACT US PAGE */
+
+.form-group {
+  width: 50%;
+}
+
+.form-control {
+  width: 50%;
+}
+.lead {
+  background-color: #ea9800;
+}
+
+.card-holder {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/* MOBILE SITE HOMEPAGE */
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .mobile-specials {
+    display: contents;
+  }
+
+  .card-body {
+    background-color: black;
+  }
+  .card-header {
+    background-color: black;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .jumbotron {
+    background-color: black !important;
+    color: white;
+  }
+
+  .lead {
+    margin-right: -7rem;
+  }
+}

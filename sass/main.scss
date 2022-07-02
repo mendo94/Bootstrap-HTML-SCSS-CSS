@@ -1,0 +1,52 @@
+// declare a variable when using sass
+@use "base";
+// @use "sass.math";
+
+$primary-bg-color: purple;
+$primary-text-color: white;
+$primary-font-size: 12px;
+
+body {
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+}
+
+menu {
+  li {
+    width: 100px;
+    background-color: blue;
+  }
+
+  p {
+    font-size: $primary-font-size;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+  }
+}
+
+%message-shared {
+  border: 1px solid black;
+  padding: 10px;
+  color: #333;
+}
+
+.message {
+  @extend %message-shared;
+}
+
+.success {
+  @extend %message-shared;
+  background-color: green;
+}
+
+.error {
+  @extend %message-shared;
+  background-color: red;
+}
+
+// .container {
+//   width: math.div(600px, 960px) * 100;
+// }
