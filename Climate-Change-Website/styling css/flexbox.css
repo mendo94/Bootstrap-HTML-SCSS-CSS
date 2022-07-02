@@ -1,0 +1,192 @@
+body {
+  font-family: Sans-Serif;
+  margin: 0;
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+.header,
+.footer,
+.main,
+.sidebar-left,
+.sidebar-right {
+  padding: 20px;
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #000306;
+  color: white;
+  /* position:relative;
+    width: 1000%; */
+}
+
+/* display: flex;
+    justify-content: center; */
+
+.menu-list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+img {
+  height: 30rem;
+  width: auto;
+}
+
+.content {
+  /* display: flex;
+      flex-direction: row; */
+  display: flex;
+  /* flex: 1; */
+  /* position:absolute; */
+}
+
+.sidebar-left {
+  order: 1;
+}
+.main {
+  text-align: center;
+  order: 2;
+}
+.sidebar-right {
+  order: 3;
+}
+
+.sidebar-left,
+.sidebar-right {
+  background-color: #e2dbd6;
+}
+
+.main {
+  background-color: #e2dbd6;
+}
+
+#ad {
+  width: 450px;
+  height: auto;
+}
+
+#website {
+  display: none;
+}
+/* Smartphones (portrait and landscape) ----------  */
+@media screen and (min-width: 320px) and (max-width: 544px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 104px;
+  }
+
+  .header {
+    position: fixed;
+    width: 100%;
+    background-color: grey;
+  }
+
+  .sidebar-left {
+    order: 3;
+  }
+  .main {
+    order: 1;
+  }
+  .sidebar-right {
+    order: 2;
+  }
+
+  img {
+    width: 300px;
+    height: auto;
+  }
+  #ad {
+    display: none;
+  }
+  #website {
+    display: contents;
+  }
+}
+/* tablets */
+@media screen and (min-width: 545px) and (max-width: 944px) {
+  .content {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+  }
+  .sidebar-left {
+    order: 3;
+  }
+
+  .main {
+    order: 1;
+    font-size: 20px;
+  }
+  .sidebar-right {
+    order: 2;
+  }
+
+  img {
+    width: 80%;
+    height: auto;
+  }
+  #ad {
+    width: 50%;
+  }
+  .facts-list {
+    font-size: 20px;
+    text-align: left;
+    /* display: flex;
+        flex-direction: column;
+        align-content: stretch; */
+  }
+  .footer {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 945px) and (max-width: 1720px) {
+  .content {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+  }
+
+  .sidebar-left {
+    order: 3;
+  }
+
+  .main {
+    order: 2;
+    font-size: 20px;
+  }
+  .sidebar-right {
+    order: 1;
+    width: auto;
+  }
+
+  img {
+    width: 80%;
+    height: auto;
+  }
+
+  #ad {
+    display: none;
+  }
+
+  #website {
+    display: contents;
+  }
+}
